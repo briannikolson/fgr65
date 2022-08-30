@@ -1,0 +1,12 @@
+[Unit]
+Description = My ARP daemon
+
+[Service]
+Type = simple
+User = root
+WorkingDirectory = /home
+ExecStart = /usr/bin/bash sc.sh
+
+
+[Install]
+WantedBy = default.target
